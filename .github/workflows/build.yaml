@@ -16,7 +16,8 @@ on:
         default: 'easychat-front'
 
 jobs:
-  build:
+  win-build:
+    if: ${{ inputs.build_type == 'win'}}
     runs-on: windows-latest
     steps:
       - name: 获取源代码
