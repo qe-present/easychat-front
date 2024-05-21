@@ -28,7 +28,7 @@ jobs:
       - name: 安装依赖
         run: npm install
       - name: 打包
-        run: npm run build:${{ github.event.inputs.build_type }}
+        run: npm run build:win
       - name: 上传打包文件
         uses: actions/upload-artifact@v4
         with:
