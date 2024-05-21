@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{inputs.build_name }}
-          path: dist
+          path: dist/${{inputs.build_name}}-1.0.0-Setup.exe
